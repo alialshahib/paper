@@ -1,0 +1,17 @@
+<include src="rapid" plugin="hobo"/>
+
+<include src="taglibs/auto/rapid/cards"/>
+<include src="taglibs/auto/rapid/pages"/>
+<include src="taglibs/auto/rapid/forms"/>
+
+<set-theme name="clean"/>
+
+<def tag="app-name">Paper</def>
+
+<include src="paperclip" plugin="paperclip_with_hobo"/>
+
+<extend tag="form" for="PaperTest">
+  <old-form merge multipart>
+    <field-list: fields="data, ali, anthony, richard, paul "/>
+  </old-form>
+</extend>
